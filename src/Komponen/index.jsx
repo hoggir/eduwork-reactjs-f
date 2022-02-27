@@ -1,25 +1,54 @@
 import React from "react";
-import Bar from "./Bar";
-import Product from "./Product";
+import Registration from "./Registration/Registration";
 
 export default class Komponen extends React.Component {
-
-    state = {
-        value: 0
-    }
-
-    handleValue = (data) => {
-        this.setState({
-            value: data
-        });
-    }
-
-    render() {
+    render(){
         return(
             <div>
-                <Bar value={this.state.value}/>
-                <Product receiveValue={this.handleValue}/>
+                <Registration />
             </div>
-            )
+        )
     }
 }
+
+// state = {
+//     value: 0
+// }
+
+// handleValue = (data) => {
+//     this.setState({
+//         value: data
+//     });
+// }
+
+// render() {
+//     return(
+//         <div>
+//             <Bar value={this.state.value}/>
+//             <Product receiveValue={this.handleValue}/>
+//         </div>
+//         )
+// }
+
+// export default class Komponen extends React.Component {
+//     state = {
+//         isLoading : true
+//     }
+
+//     render(){
+//         setTimeout(() => {
+//             this.setState({
+//                 isLoading: false
+//             })
+//         }, 3000)
+
+//         return(
+//             <div>
+//                 { this.state.isLoading
+//                     ? <h1>Loading...</h1>
+//                     : <Product />
+//                 }
+//             </div>
+//         )
+//     }
+// }
