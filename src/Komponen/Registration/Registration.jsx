@@ -38,6 +38,7 @@ export default class Registration extends React.Component {
       message = [...message, 'Password tidak boleh kosong!'];
     }
 
+    //eslint-disable-next-line
     const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
     if(!re.test(String(email).toLowerCase())) {
       message = [...message, 'Email tidak valid']
