@@ -13,8 +13,8 @@
 }
 
 .card {
-    margin: 0 auto;
-    width: 760px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .card-img {
@@ -90,4 +90,22 @@ input {
 
 .btn--green:hover {
     background: #4dae3c;
+}
+
+@media screen and (max-width: 1110px) {
+    .card {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 910px) {
+    .card {
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .card {
+        margin: 0 auto;
+    }
 }
